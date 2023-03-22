@@ -1,0 +1,144 @@
+/*********************TAG SELECTORS*****************/
+
+body {
+    background-color: #d8d8d8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* hr {
+    background-color: #d8c0c0 !important;
+    border-style: solid !important;
+    height: 2px !important;
+} */
+
+
+h1 {
+    border: 1px;
+    color: #f8c3c3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+    border: 1px;
+    color: #f8c3c3;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+    border: 1px;
+    color: #fddb75;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a{
+    font-weight: bold;
+}
+
+a:link{
+    color: #a73694
+}
+
+a:visited{
+    color: #642059
+}
+
+a:focus {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+/*********************CLASS SELECTORS*****************/
+
+.center-items {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.my-separator {
+    background-color: #d8c0c0;
+    border-style: solid;
+    height: 2px;
+}
+
+
+
+/*********************ID SELECTORS*****************/
+#myImage:hover {
+    transition: transform .4s;
+    transform: scale(1.4);
+}
+
+#myImage {
+    transition: transform .4s;
+    border-radius:100%;
+    border:5px solid #fddb75;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*----------- CAROUSEL STUFF ---------------*/
+/* --------------------------- */
+#hobbies {
+    background-color: #afa072;
+}
+
+.hobby-title-text {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hobby-body-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    height: 100px;
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.hobby-image {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.hobby-video {
+    padding: 10px;
+}
+
+.hobby-img-video-holder {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.quote{
+    width: 100%;
+    min-height: 60px;
+    display: inline-block;
+    font-size: 1.1rem;
+    text-align: left;
+
+}
+
+.fancy-image {
+    display: block;
+    width: auto;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-button{
+    background-color: #d8d8d8;
+    color: #a73694;
+}
