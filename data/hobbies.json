@@ -1,0 +1,78 @@
+{
+    "hobbies": [
+        {
+            "active": "",
+            "title": "Playing Violin",
+            "quote":{
+                "quote": "A table, a chair, a bowl of fruit and a violin; what else does a man need to be happy?",
+                "author": "Albert Einstein"
+            },
+            "image": null,
+            "video":{
+                "thumbnail_path": "./img/displays/violin-poster-thumbnail.jpg",
+                "video_path": "./video/ballow_violin.mp4"
+            }
+        },
+        {
+            "active": "",
+            "title": "Playing Cello",
+            "quote":{
+                "quote": "Music is powered by ideas. If you don't have clarity of ideas, you're just communicating sheer sound.",
+                "author": "Yo-Yo Ma"
+            },
+            "image": null,
+            "video":{
+                "thumbnail_path": "./img/displays/cello-poster-thumbnail.jpg",
+                "video_path": "./video/ballow_cello.mp4"
+            }
+        },
+        {
+            "active": "",
+            "title": "3D Printing",
+            "quote":{
+                "quote": "The art challenges the technology, and the technology inspires the art.",
+                "author": "John Lasseter"
+            },
+            "image": {
+                    "image_path": "img/hobbies/3d_printing.jpg"
+            },
+            "video": null
+        },
+        {
+            "active": "",
+            "title": "Knitting and Crocheting",
+            "quote":{
+                "quote": "It's all fun and games until someone loses their stitch count!",
+                "author": "Anonymous"
+            },
+            "image": {
+                "image_path": "img/hobbies/crochet.jpg"
+            },
+            "video": null
+        },
+        {
+            "active": "",
+            "title": "Baking",
+            "quote":{
+                "quote": "With enough butter, anything is good.",
+                "author": "Julia Child"
+            },
+            "image": {
+                "image_path": "img/hobbies/baking.jpg"
+            },
+            "video": null
+        },
+        {
+            "active": "active",
+            "title": "World Traveling",
+            "quote":{
+                "quote": "Life is either a daring adventure or nothing at all.",
+                "author": "Helen Keller"
+            },
+            "image": {
+                    "image_path": "img/hobbies/world_traveler.jpg"
+            },
+            "video": null
+        }
+    ]
+}

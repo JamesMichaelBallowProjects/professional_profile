@@ -1,0 +1,323 @@
+{
+  "skills": [
+    {
+      "name": "AWS - Amazon Web Services",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "AWS Solutions Architect",
+          "body": "I am certified as <strong>Associate Solutions Architect</strong>. I am working towards professional certification.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS Console",
+          "body": "I <strong>develop (Cloud9) and monitor resources</strong>. Used also for tasks like MFA Delete protection",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS Serverless Architecture",
+          "body": "I am <strong>very experienced</strong> in creating lambda functions, Athena, S3, Glue, SQS, SNS, and API Gateway in Console and in CDK.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS Cloud9 Computing",
+          "body": "I understand how to build Cloud9 environments, and use CloudFormation for a development in the cloud (i.e., repository, git, CDK).",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS CKD (Python)",
+          "body": "I use CDK to fully develop a CloudFormation Template to CloudForm an architecture. I troubleshoot CDK and resolve build issues.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS CloudFormation (IaC)",
+          "body": "I use CloudFormation to build an architecture in AWS. I know how to CloudForm using CodePipeline or CloudFormation directly.",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "AWS Grafana (AMG)",
+          "body": "I used Amazon-Managed Grafana to build dashboards for customers. I developed a program to generate dashboards <em>en masse</em>.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Languages (Front End)",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "HTML/CSS/JS",
+          "body": "I am comfortable with these languages to <strong>design, teach, and troubleshoot bugs</strong>. I used these skills to make this website you see now.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "Bootstrap",
+          "body": "<strong>I use a lot of boostrap</strong> in the website you see now. The concepts are very clear.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "React",
+          "body": "Actively learning this language, and using it at my current job position for our main product <strong>Abacode SCOUT&copy</strong>.",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "Angular",
+          "body": "I have seen this language, and I'm aware of its components and have read its documentation, but not yet extensive experience with it.",
+          "rating": "⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Languages (Back End)",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "Python",
+          "body": "I have over <strong>7 years</strong> experience. I used it in my research for my Master's Degree. I'm extremely comfortable with this language.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "C-Shell, Bash",
+          "body": "I wrote <strong>award-winning</strong> U.S. Department of Defense, cross-laboratory job automation-husbandry software using shell.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "MATLAB",
+          "body": "I wrote programs for Nuclear Analysis and Design on <strong>U.S. Naval Reactor cores</strong> for the U.S. Department of Defense.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "C/C++",
+          "body": "I wrote programs in C for my Master's Degree. and I designed the <strong>best compiler</strong> in my class using C.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Languages (Spoken)",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "English",
+          "body": "I have a refined diction that allows me to select words that <strong>accurately and succinctly</strong> convey my ideas to others.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Spanish",
+          "body": "I have <strong>over 13 years experience</strong> in speaking Spanish. I have spoken in many scenarios and find it useful in the workplace.",
+          "rating": "⭐⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "AWS RDS/S3",
+          "body": "I can <strong>standup, use, and design</strong> RDS tables in AWS. I have <strong>over 3 years</strong> experience with S3, and I understand it extremely well.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Airtable",
+          "body": "I have <strong>stood up a database</strong> for 3 different small businesses and for 3 small projects. I use Airtable's API to integrate with other programs.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "PostgreSQL",
+          "body": "I use this <strong>in my current job position</strong> to query a PostgresDB hosted in AWS for checking constraints/design, and to write automation to CRUD records for a Web Application.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "Flux/InfluxQL",
+          "body": "Used this language when working in <strong>refrigeration system automation</strong>. Used it to query an influxDB housing refrigeration data to present data in Grafana Labs.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Version Control",
+      "table": "skills-accordion-1",
+      "description": [
+        {
+          "title": "Git/GitHub",
+          "body": "I have worked with <em>git</em> for <strong>over 5 years</strong>. I understand concepts of merging, SDLC, collaborating, and keeping track of changes.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS CodeCommit",
+          "body": "I use this in my current position, and <strong>I'm very comfortable with it</strong>. I know how to setup with Cloud9 and to control developer contributions to repos.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Comparing Commits",
+          "body": "When there is a commit issue, or there is a developer-caused conflict, I can <strong>spot the issues quickly</strong> and think through a resolve calmly and quickly.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "AWS CodePipeline",
+          "body": "I use this in my current position, I've used to <strong>carefully control changes to cloud architecture</strong> when CloudFormation is used.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+
+
+    {
+      "name": "Environments",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "Amazon (AWS)",
+          "body": "I'm a <strong>certified Solutions Architect</strong>. I do this full time and I'm very comfortable in the AWS using code and console alike.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Google Chrome",
+          "body": "I use Chrome as my browser full-time, and I have written a <strong>Chrome Extension</strong>. I understand the Extension building process.",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "HPC",
+          "body": "I have <strong>4 years experience</strong> issuing jobs to an HPC at the Naval Nuclear Power Laboratory for the U.S. Department of Defense.",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "Azure",
+          "body": "I understand the general concepts of Azure including cybersecurity principals, and I have used <strong>Azure Devops</strong> for Agile Development.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Professional Development (Soft Skills)",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "Continuous Learning",
+          "body": "I am trained to learn things <strong>extraordinarily quickly</strong> from my time at NNPTU. I learn new languages and techniques very rapidly.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Handling Failure",
+          "body": "Part of learning and developing is failure. I have learned that <strong>the best way to succeed is to accept failure</strong> and response to it with persistence.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Communication/Collaboration",
+          "body": "I participate whole-heartedly in <strong>backlog refinement, retrospectives, and daily standups</strong> to ensure there are minimal doubts.",
+          "rating": "⭐⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Documenation",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "Coded Comments",
+          "body": "In all of my code, <strong>I write comments in a fashion so as to allow even the most novice of programmers to understand</strong> the logic and the reasoning behind each block of code.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "JIRA (Atlassian)",
+          "body": "I'm <strong>well-practiced in documenting my work in tickets</strong>, as well as blockers, time spent, and new findings/learnings.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Confluence (Atlassian)",
+          "body": "I have used many components in this product and have written <strong>over 100 pages</strong> of research and conclusive information for two different companies.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "OverLeaf (LaTex)",
+          "body": "I used this product to create my cv, to write my master's thesis, and to write my publication. It's a tricky language, but it's a very useful one.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Diagramming",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "Lucid (Diagrams)",
+          "body": "I <strong>use Lucid every day</strong> to make diagrams for the AWS Solutions. I understand sharing, licensing, and quick tooling. I am very quick at drawing in Lucid and can produce an entire feature drawing in under 2 days.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Wireframing",
+          "body": "I am practiced in <strong>laying out front-end and back-end logic/flows</strong>  into a diagram so that teams on both ends of a web application can collaborate smoothly. I make them simple and comprehensive with <strong>attention to detail</strong>.",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "DB Diagram (dbdiagram.io)",
+          "body": "I use this application to <strong>design relational databases</strong>  for my current job position. It's a very convenient tool (a little tricky to get use to), and it can save you loads of time when designing an RDS from a visual pespective.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Techniques & Methods",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "Quality/Speed/Cost Scoping",
+          "body": "I have an <strong>engineering, analyst, developer, and design</strong> background. I can define problems, the required level of effort, and deliver the right solution.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Computer Vision",
+          "body": "I am <strong><a href='https://link.springer.com/chapter/10.1007/978-3-031-06430-2_41'>published internationally</a></strong> in the field of computer vision. My thesis was in hand gesture detection in monochromatic thermal images.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Application Programmatic Interface (API)",
+          "body": "<strong>I understand APIs</strong>, how to read documentation about them, how to integrate programs using them, and I have designed them myself in AWS. I understand the concept of using authorization and authentication to ensure API calls are performed with security.",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Machine/Deep Learning",
+          "body": "I learned a majority of machine learning in my Master's Degree. I used CNNs along with computer vision for hand gesture detection in thermal imaging. I have given talks/presentations and answered questions about machine learning to employees at all ranks.",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    },
+    {
+      "name": "Special Packages",
+      "table": "skills-accordion-2",
+      "description": [
+        {
+          "title": "matplotlib (Python)",
+          "body": "",
+          "rating": "⭐⭐⭐⭐⭐"
+        },
+        {
+          "title": "Streamlit (Python Web App Development)",
+          "body": "",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "Plotly (Python)",
+          "body": "",
+          "rating": "⭐⭐⭐⭐"
+        },
+        {
+          "title": "HighCharts (Javascript)",
+          "body": "",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "Charts.js (Javascript)",
+          "body": "",
+          "rating": "⭐⭐⭐"
+        },
+        {
+          "title": "Networkx (Python)",
+          "body": "",
+          "rating": "⭐⭐⭐"
+        }
+      ]
+    }
+  ]
+}
