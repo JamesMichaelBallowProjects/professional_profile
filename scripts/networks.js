@@ -1,11 +1,29 @@
 // node radii to select from
-let radii = {
-  0: 26,
-  1: 20,
-  2: 12,
-  3: 8,
-  4: 8,
-  5: 6,
+let radii = {}
+let linkLength = 0
+if (isMobile) {
+  radii = {
+    0: 18,
+    1: 14,
+    2: 10,
+    3: 8,
+    4: 8,
+    5: 6,
+  };
+  linkLength = 15
+  linkWidth = 1
+
+} else {
+  radii = {
+    0: 26,
+    1: 20,
+    2: 12,
+    3: 8,
+    4: 8,
+    5: 6,
+  };
+  linkLength = 18
+  linkWidth = 2
 };
 
 // node colors to select from
@@ -398,7 +416,7 @@ function get_skills_network_graph(
           enableSimulation: true,
         },
         link: {
-          color: "grey",
+          color: "#61677A",
           width: link_width,
         },
       },
@@ -437,8 +455,8 @@ nodeGraphElementIds.forEach((modelColor) => {
 const blue = get_skills_network_graph(
   (element_id = "blue"),
   (title = "Data"),
-  (link_length = 18),
-  (link_width = 2),
+  (link_length = linkLength),
+  (link_width = linkWidth),
   (nodes_this_chart = nodes.blue),
   (data_this_chart = data.blue)
 );
@@ -446,8 +464,8 @@ const blue = get_skills_network_graph(
 const green = get_skills_network_graph(
   (element_id = "green"),
   (title = "Problem-Solving"),
-  (link_length = 18),
-  (link_width = 2),
+  (link_length = linkLength),
+  (link_width = linkWidth),
   (nodes_this_chart = nodes.green),
   (data_this_chart = data.green)
 );
@@ -455,8 +473,8 @@ const green = get_skills_network_graph(
 const red = get_skills_network_graph(
   (element_id = "red"),
   (title = "Design"),
-  (link_length = 18),
-  (link_width = 2),
+  (link_length = linkLength),
+  (link_width = linkWidth),
   (nodes_this_chart = nodes.red),
   (data_this_chart = data.red)
 );
@@ -464,8 +482,8 @@ const red = get_skills_network_graph(
 const yellow = get_skills_network_graph(
   (element_id = "yellow"),
   (title = "Development"),
-  (link_length = 18),
-  (link_width = 2),
+  (link_length = linkLength),
+  (link_width = linkWidth),
   (nodes_this_chart = nodes.yellow),
   (data_this_chart = data.yellow)
 );

@@ -57,6 +57,12 @@ a:focus {
     padding: 10px;
 }
 
+.center-items-device {
+    margin: auto;
+    width: 90%;
+    /* padding: 10px; */
+}
+
 .my-separator {
     background-color: #d8c0c0;
     border-style: solid;
