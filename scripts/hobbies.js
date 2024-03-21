@@ -55,14 +55,11 @@ function generate_hobby(
 
   // make hobby image if image
   if (hobby_image !== null) {
-    console.log(`image found for ${hobby_title}`)
     content = return_image_block(hobby_image);
   }
 
   // make hobby video if video
   if (hobby_video !== null) {
-    console.log(`video found for ${hobby_title}`)
-
     content = return_video_block(hobby_video);
   }
 

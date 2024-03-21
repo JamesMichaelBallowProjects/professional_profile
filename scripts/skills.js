@@ -6,22 +6,21 @@ var accordionItemCounter = {
 
 // toggle skills displays
 function toggle_skills_display(){
-  var element = document.getElementById("simplified-skillset");
-  element.classList.toggle("hide-content");
-  console.log(element.classList)
+  console.log("button clicked")
+  document.getElementById("simplified-skillset").classList.toggle("hide-content");
+  document.getElementById("accordion-skillset").classList.toggle("hide-content");
 }
-
 
 // simplified display
 function generate_badge(id_to_put_card, card_title, rating_number) {
   var newBadge = `
-    <span class="badge rounded-pill bg-primary position-relative">
+    <h2 class="badge bg-primary rounded-pill position-relative">
       ${card_title}
-      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      <span class="badge text-bg-danger">
         ${rating_number}⭐
       </span>
-    </span>
-    `;
+    </h2>
+  `;
   document.querySelector(`#${id_to_put_card}`).innerHTML += newBadge;
 }
 
