@@ -24,6 +24,7 @@
     <!-- My styling -->
     <!-- <link rel="icon" href="img/apple-touch-icon.png"> -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/hobbies.css">
     <link rel="stylesheet" href="css/networks.css">
 </head>
@@ -242,16 +243,25 @@
                     </div>
                 </div>
             </div>
-            <div class="row center-items ">
-                <div class="col-6 g-4">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault" onclick=toggle_skills_display()>Default switch checkbox input</label>
+            </div>
+            <div id="accordion-skillset" class="row center-items ">
+                <div class="col-6 skills-accordion-container g-4">
                     <div class="accordion" id="skills-accordion-1">
                         <!-- Skills Accordion Items Loaded at Page Load -->
                     </div>
                 </div>
-                <div class="col-6 g-4">
+                <div class="col-6 skills-accordion-container g-4">
                     <div class="accordion" id="skills-accordion-2">
                         <!-- Skills Accordion Items Loaded at Page Load -->
                     </div>
+                </div>
+            </div>
+            <div class="row center-items" style="border: 2px solid red;">
+                <div id="simplified-skillset" >
+                    <!-- Skills Badge Items Loaded at Page Load for Switch -->
                 </div>
             </div>
         </div>

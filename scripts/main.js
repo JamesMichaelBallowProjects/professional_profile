@@ -21,22 +21,31 @@ const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
 let networkContainers = document.getElementsByClassName('network-container')
 console.log(networkContainers)
 if (isMobile) {
-  console.log("Detected as Mobile Device")
     for (let i = 0; i < networkContainers.length; i++) {
       networkContainers[i].classList.add('col-12')
-      console.log(networkContainers[i].classList)
     }
-
 } else {
-  console.log("Detected as PC Device")
   networkContainers.forEach(nc => {
     nc.classList.add('col-sm-12', 'col-lg-6', 'col-xxl-3', 'g-2')
   });
 }
 
-//col col-sm-12 col-lg-6 col-xxl-3 g-2
-
 // -- skill.js contains logic to generate skills accordion
+// ---- fix skills layout if on mobile device
+let skillsAccordionContainers = document.getElementsByClassName('skills-accordion-container')
+console.log(skillsAccordionContainers)
+if (isMobile) {
+    for (let i = 0; i < skillsAccordionContainers.length; i++) {
+      skillsAccordionContainers[i].classList.add('col-12', 'g-2')
+    }
+} else {
+  networkContainers.forEach(nc => {
+    nc.classList.add('col-6', 'g-4')
+  });
+}
+
+
+
 
 // personal projects
 // -- no js, all css

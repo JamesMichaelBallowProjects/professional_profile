@@ -4,20 +4,50 @@ var accordionItemCounter = {
   "skills-accordion-2": 0,
 };
 
+// toggle skills displays
+function toggle_skills_display(){
+  var element = document.getElementById("simplified-skillset");
+  element.classList.toggle("hide-content");
+  console.log(element.classList)
+}
+
+
+// simplified display
+function generate_badge(id_to_put_card, card_title, rating_number) {
+  var newBadge = `
+    <span class="badge rounded-pill bg-primary position-relative">
+      ${card_title}
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        ${rating_number}⭐
+      </span>
+    </span>
+    `;
+  document.querySelector(`#${id_to_put_card}`).innerHTML += newBadge;
+}
+
+function populate_skills_badges(element_id, skill_comments) {
+
+  skill_comments.forEach((r) => {
+    generate_badge(
+      element_id,
+      r['title'],
+      r['rating_number']
+    )
+  });
+}
+
 // card that is inserted into accordion
 function generate_card(id_to_put_card, card_title, card_rating, card_body) {
   var newCard = `
       <div class="col col-sm-6 g-4">
         <div class="card text-bg-light border-dark flex-fill" style="width: auto;">
           <div class="card-header"><strong>${card_title}</strong></div>
-          <div class="card-body">
+          <div class="card-body ">
             <h5 class="card-title">
             </h5>
-            <p class="card-text skill-card-font">
+            <p class="card-text skill-card">
               ${card_body}</p>
-            <p class="card-text">
               <small class="text-muted" style="font-size: x-small">Experience: ${card_rating}</small>
-            </p>
           </div>
         </div>
       </div>
@@ -38,7 +68,7 @@ function populate_skills_accordion(element_id, skill_name, skill_comments) {
                 aria-expanded="false" aria-controls="${element_id}-item-${accordionItemCounter[element_id]}">
                 <div class="container-fluid" style="justify-content: flex-start;">
                     <div class="row">
-                        <div class="col col-6">${skill_name}</div>
+                        <div class="col col-12">${skill_name}</div>
                     </div>
                 </div>
             </button>
@@ -80,6 +110,12 @@ fetch('./data/skills.json')
         r['name'],
         r['description']
       )
+
+      populate_skills_badges(
+        "simplified-skillset",
+        r['description']
+      )
+
     });
   })
   .catch(error => {
