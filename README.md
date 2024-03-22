@@ -1,4 +1,4 @@
-<img src="./img/jmb_2020-circle.png" width=200>
+<img src="./img/me/jmb_2020-circle.png" width=200>
 
 # Professional Portfolio - James Michael Ballow
 ## Purpose
