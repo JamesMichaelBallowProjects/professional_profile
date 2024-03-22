@@ -102,11 +102,6 @@ a:focus {
     fill: #ffffff00;
 }
 
-#blue{
-    width: 100%;
-}
-
-
 
 /* ------------ MOVING BANNER ---------- */
 @keyframes bannermove {

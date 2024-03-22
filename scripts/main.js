@@ -32,9 +32,9 @@ if (isMobile) {
 // ---- fix skills layout if on mobile device
 let skillsAccordionContainers = document.getElementsByClassName('skills-accordion-container')
 if (isMobile) {
-    for (let i = 0; i < skillsAccordionContainers.length; i++) {
-      skillsAccordionContainers[i].classList.add('col-12', 'g-2')
-    }
+  for (let i = 0; i < skillsAccordionContainers.length; i++) {
+    skillsAccordionContainers[i].classList.add('col-12', 'g-2')
+  }
 } else {
   for (let i = 0; i < skillsAccordionContainers.length; i++) {
     skillsAccordionContainers[i].classList.add('col-6', 'g-4')

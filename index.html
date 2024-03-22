@@ -221,7 +221,7 @@
             <h3>My Skillset</h3>
         </div>
         <div class="container-fluid">
-            <div class="row center-items">
+            <div class="row center-items" style="padding-bottom: 30px;">
                 <div class="col network-container" style="object-fit: contain;">
                     <div id="blue">
                         <!-- Skills Network Items Loaded at Page Load -->
@@ -243,29 +243,49 @@
                     </div>
                 </div>
             </div>
-            <div class="row center-items">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" onchange="toggle_skills_display()" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                </div>
-            </div>
-            <div id="accordion-skillset" class="row center-items ">
-                <div class="col-6 skills-accordion-container g-4">
-                    <div class="accordion" id="skills-accordion-1">
-                        <!-- Skills Accordion Items Loaded at Page Load -->
+
+
+
+            <div class="row center-items" id="skill-list-holder">
+                <div class="row center-items" id="accordion-badges-switch">
+                    <div class="col" style="text-align: right;">
+                        Accordion
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-switch" style="display: flex; align-items: center; justify-content: center;">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                onchange="toggle_skills_display()"
+                                id="flexSwitchCheckDefault"
+                            >
+                            <!-- <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label> -->
+                        </div>
+                    </div>
+                    <div class="col" style="text-align: left;">
+                        Badges
                     </div>
                 </div>
-                <div class="col-6 skills-accordion-container g-4">
-                    <div class="accordion" id="skills-accordion-2">
-                        <!-- Skills Accordion Items Loaded at Page Load -->
+                <div id="accordion-skillset" class="row" style="margin: auto;">
+                    <div class="col-6 skills-accordion-container g-4">
+                        <div class="accordion" id="skills-accordion-1">
+                            <!-- Skills Accordion Items Loaded at Page Load -->
+                        </div>
+                    </div>
+                    <div class="col-6 skills-accordion-container g-4">
+                        <div class="accordion" id="skills-accordion-2">
+                            <!-- Skills Accordion Items Loaded at Page Load -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div id="simplified-skillset" class="hide-content">
+                        <!-- Skills Badge Items Loaded at Page Load for Switch -->
                     </div>
                 </div>
             </div>
-            <div class="row center-items">
-                <div id="simplified-skillset" class="hide-content">
-                    <!-- Skills Badge Items Loaded at Page Load for Switch -->
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -314,13 +334,13 @@
                 </ul>
                 <li><strong>Computer Vision</strong></li>
                 <ul>
-                    <li><a href="./pages/working_on_it.html"><strong>Autonomous Drone Obstacle Avoidance</strong></a> - [<a
+                    <li><a href="./pages/working_on_it.html"><strong>Autonomous Drone Obstacle Avoidance (Coming Soon)</strong></a> - [<a
                             href="./pages/working_on_it.html">source
                             code</a>] - </em> This was a project in which I participated as the lead machine learnist in terms of
                             labeling the images and training models to identify the location of cardboard boxes. This is an excellent
                             example of machine learning, using python, data labeling, and data analytics.
                     </li>
-                    <li><a href="./pages/working_on_it.html"><strong>Hand Detection and Gesture Identification</strong></a> - [<a
+                    <li><a href="./pages/working_on_it.html"><strong>Hand Detection and Gesture Identification (Coming Soon)</strong></a> - [<a
                         href="./pages/working_on_it.html">source
                         code</a>] - </em> This is just a quick page to show off results and findings from my thesis work. I cannot show
                         all content as the material is owned by Clarkson University and by my publication. However, I can show the code

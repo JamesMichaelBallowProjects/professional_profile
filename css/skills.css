@@ -5,3 +5,16 @@
 .hide-content{
     display: none;
 }
+
+#accordion-badges-switch{
+    width: max-content;
+    background-color: #C7C8CC;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#skill-list-holder{
+    background-color: #8c6a5d4d;
+    border: 2px solid black;
+    border-radius: 20px;
+}
