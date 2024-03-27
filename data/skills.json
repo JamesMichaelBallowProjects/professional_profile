@@ -313,7 +313,7 @@
           "rating_number": "5"
         },
         {
-          "title": "Application Programmatic Interface (API)",
+          "title": "APIs",
           "body": "<strong>I understand APIs</strong>, how to read documentation about them, how to integrate programs using them, and I have designed them myself in AWS. I understand the concept of using authorization and authentication to ensure API calls are performed with security.",
           "rating": "⭐⭐⭐⭐⭐",
           "rating_number": "5"
@@ -337,7 +337,7 @@
           "rating_number": "5"
         },
         {
-          "title": "Streamlit (Python Web App Development)",
+          "title": "Streamlit (Python)",
           "body": "",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
@@ -349,13 +349,13 @@
           "rating_number": "4"
         },
         {
-          "title": "HighCharts (Javascript)",
+          "title": "HighCharts (JS)",
           "body": "",
           "rating": "⭐⭐⭐",
           "rating_number": "3"
         },
         {
-          "title": "Charts.js (Javascript)",
+          "title": "Charts.js (JS)",
           "body": "",
           "rating": "⭐⭐⭐",
           "rating_number": "3"

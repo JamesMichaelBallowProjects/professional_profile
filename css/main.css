@@ -27,6 +27,8 @@ h2 {
 }
 
 h3 {
+    font-size: 2.2em;
+    text-align: center;
     border: 1px;
     color: #fddb75;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -37,11 +39,11 @@ a{
 }
 
 a:link{
-    color: #a73694
+    color: #0174BE
 }
 
 a:visited{
-    color: #642059
+    color: #124076
 }
 
 a:focus {
@@ -70,6 +72,14 @@ a:focus {
 }
 
 /* ------------ Introductory Section ---------------*/
+#myName {
+    font-size: 3vw;
+    border: 1px;
+    color: #f8c3c3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 #myImage {
     /* size */
     height: 100%;
