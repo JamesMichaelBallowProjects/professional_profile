@@ -1,0 +1,72 @@
+/* classes for entire page */
+.pad-top-bottom {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.flex-dead-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-top {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+/* Background */
+#page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.out-top {
+    animation: rotate 20s linear infinite;
+    transform-origin: 13px 25px;
+}
+.in-top {
+    animation: rotate 10s linear infinite;
+    transform-origin: 13px 25px;
+}
+.out-bottom {
+    animation: rotate 25s linear infinite;
+    transform-origin: 84px 93px;
+}
+.in-bottom {
+    animation: rotate 15s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+figcaption {
+    text-align: center;
+}
