@@ -53,14 +53,14 @@
       "table": "skills-accordion-1",
       "description": [
         {
-          "title": "HTML/CSS/JS",
+          "title": "HTML/CSS/JS/Bootstrap",
           "body": "I am comfortable with these languages to <strong>design, teach, and troubleshoot bugs</strong>. I used these skills to make this website you see now.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "5"
         },
         {
-          "title": "Bootstrap",
-          "body": "<strong>I use a lot of boostrap</strong> in the website you see now. The concepts are very clear.",
+          "title": "Markdown",
+          "body": "I am comfortable with this language and have <strong>over 1 year</strong> experience with it.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
         },
@@ -243,7 +243,7 @@
       ]
     },
     {
-      "name": "Documenation",
+      "name": "Documentation",
       "table": "skills-accordion-2",
       "description": [
         {
