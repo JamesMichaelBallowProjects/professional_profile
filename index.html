@@ -23,15 +23,15 @@
 
     <!-- My styling -->
     <!-- <link rel="icon" href="img/apple-touch-icon.png"> -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/hobbies.css">
-    <link rel="stylesheet" href="css/networks.css">
+    <link rel="stylesheet" href="./index/css/main.css">
+    <link rel="stylesheet" href="./index/css/skills.css">
+    <link rel="stylesheet" href="./index/css/hobbies.css">
+    <link rel="stylesheet" href="./index/css/networks.css">
 </head>
 
 <body>
     <div>
-        <img src="./img/displays/Fancy_separator.png" style="height: auto; width: 20vw;" class="fancy-image"></img>
+        <div><img src="./index/img/displays/Fancy_separator.png" class="fancy-image"></img></div>
     </div>
 
     <!--- Introduction to James -->
@@ -47,36 +47,36 @@
                         are challenging. I never quit, I never back down, and I never put aside a challenge. My
                         deal is this: 'You give me the time and the resources, and I will provide you a solution.'
                 ">
-                <img id="myImage" src="img/me/jmb_2020-circle.png" alt="img/me/jmb_2020.jpg" />
+                <img id="myImage" src="./index/img/me/jmb_2020-circle.png" alt="img/me/jmb_2020.jpg" />
             </div>
 
             <!-- links to work areas -->
             <div class="col-sm-12 col-md-7 col-xl-7 col-xxl-4 g-4"
                 style="display: flex; align-items: center; justify-content: center;">
                 <div>
-                    <h1>James Michael Ballow</h1>
+                    <h1 id="myName">James Michael Ballow</h1>
                     <em>AWS Solutions Architect and Application Developer</em>
                     <hr>
                     <table class="table .table-sm .table-borderless">
                         <tbody>
                             <tr>
                                 <td><strong>Resume</strong></td>
-                                <td><em><a href="./James_Michael_Ballow_Resume_2024.pdf">James Michael Ballow</a></em>
+                                <td><em><a href="./index/data/James_Michael_Ballow_Resume_2024.pdf" target="_blank">James Michael Ballow</a></em>
                                 </td>
                             </tr>
                             <tr>
                                 <td><strong>LinkedIn</strong></td>
                                 <td><em><a
-                                            href="https://www.linkedin.com/in/james-michael-ballow/">james-michael-ballow</a></em>
+                                            href="https://www.linkedin.com/in/james-michael-ballow/" target="_blank">james-michael-ballow</a></em>
                             </tr>
                             <tr>
                                 <td><strong>GitHub</strong></td>
-                                <td><em><a href="https://github.com/jamesmichaelballowprojects">jmb11x</a></em></td>
+                                <td><em><a href="https://github.com/jamesmichaelballowprojects" target="_blank">jmb11x</a></em></td>
                             </tr>
                             <tr>
                                 <td><strong>Udemy</strong></td>
                                 <td><em><a
-                                            href="https://www.udemy.com/course/computer-science-the-foundation-you-didnt-know-you-needed/#instructor-1">James
+                                            href="https://www.udemy.com/course/computer-science-the-foundation-you-didnt-know-you-needed/#instructor-1"  target="_blank">James
                                             Michael Ballow</a></em></td>
                             </tr>
                             <tr>
@@ -125,7 +125,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-1 col-md-2 col-12">
-                        <img id="clarkson-emblem" class="education-logo" src="./img/logo/clarkson-university.png"
+                        <img id="clarkson-emblem" class="education-logo" src="./index/img/logo/clarkson-university.png"
                             title="Let's Go Tech!" alt="clarkson-university-emblem">
                     </div>
                     <div class="col-xl-11 col-md-10 col-12">
@@ -141,7 +141,7 @@
                                 <li><strong>Publication:</strong>
                                     <span style="font-size: small;">
                                         Ballow, J.M., Dey, S. (2022).
-                                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-06430-2_41">Real-Time
+                                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-06430-2_41" target="_blank">Real-Time
                                             Hand Gesture Identification in Thermal Images</a>
                                         In: Sclaroff, S., Distante, C., Leo, M., Farinella, G.M., Tombari, F. (eds)
                                         Image Analysis and Processing – ICIAP 2022. ICIAP 2022. Lecture Notes in
@@ -156,7 +156,7 @@
 
                 <div class="row">
                     <div class="col-xl-1 col-md-2 col-12 education-logo">
-                        <img id="nnptu-emblem" class="education-logo" src="./img/logo/nnptc.png"
+                        <img id="nnptu-emblem" class="education-logo" src="./index/img/logo/nnptc.png"
                             title="Knowledge, Integrity, Excellence!" alt="nnptc-emblem">
                     </div>
                     <div class="col-xl-11 col-md-10 col-12">
@@ -185,7 +185,7 @@
                 <div class="row">
                     <div class="col-xl-1 col-md-2 col-12 education-logo">
                         <img id="florida-state-emblem" class="education-logo"
-                            src="./img/logo/florida-state-university.png" title="Go Noles!"
+                            src="./index/img/logo/florida-state-university.png" title="Go Noles!"
                             alt="florida-state-university-emblem">
                     </div>
                     <div class="col-xl-11 col-md-10 col-12">
@@ -260,7 +260,6 @@
                                 onchange="toggle_skills_display()"
                                 id="flexSwitchCheckDefault"
                             >
-                            <!-- <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label> -->
                         </div>
                     </div>
                     <div class="col" style="text-align: left;">
@@ -300,48 +299,48 @@
             <ul>
                 <li><strong>Python</strong></li>
                 <ul>
-                    <li><a href="https://jamesmichaelballowprojects.github.io/plotly_data_analysis_example/"><strong>Plotly
+                    <li><a href="https://jamesmichaelballowprojects.github.io/plotly_data_analysis_example/" target="_blank"><strong>Plotly
                                 Interactive Data Analysis</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/plotly_data_analysis_example">source
+                            href="https://github.com/JamesMichaelBallowProjects/plotly_data_analysis_example" target="_blank">source
                             code</a>] - Example of data analysis using plotting methods from <strong>plotly</strong>
                         python
                         package on a free database of diamond characteristics <em>(Shivam Agrawal. (May 24, 2017).
                             Diamonds,
                             Version 1.0. Retrieved March, 2023 from 'shivam2503' at
                             kaggle.com)</em></li>
-                    <li><a href="https://jamesmichaelballowprojects.github.io/plotly_networkx_data_analysis_example/"><strong>Plotly
+                    <li><a href="https://jamesmichaelballowprojects.github.io/plotly_networkx_data_analysis_example/" target="_blank"><strong>Plotly
                                 Interactive Network Representation</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/plotly_networkx_data_analysis_example">source
+                            href="https://github.com/JamesMichaelBallowProjects/plotly_networkx_data_analysis_example" target="_blank">source
                             code</a>] - Example of assembling a network for a company and its customers with line
                         color/size
                         to show relationships, using plotting methods from <strong>plotly</strong> and
                         <strong>networkx</strong> python packages.
                     </li>
-                    <li><a href="https://jamesmichaelballowprojects-vegas-guidebook.streamlit.app/"><strong>Streamlit
+                    <li><a href="https://jamesmichaelballowprojects-vegas-guidebook.streamlit.app/" target="_blank"><strong>Streamlit
                                 Application</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/vegas_guidebook">source code</a>] -
+                            href="https://github.com/JamesMichaelBallowProjects/vegas_guidebook" target="_blank">source code</a>] -
                         Example
                         of a quick application that can be built using <strong>Streamlit</strong> to generate MVP/POC
                         ideas
                         without spending too much money.</li>
-                    <li><a href="./pages/working_on_it.html"><strong>Image Area Labeler (Coming Soon)</strong></a> - [<a
-                            href="./pages/working_on_it.html">source code</a>] - A real application that can be used by
-                        researchers
-                        in computer vision field to label areas of their images quickly so that they can prepare
-                        datasets for
-                        smaller computer vision projects.
-                    </li>
                 </ul>
                 <li><strong>Computer Vision</strong></li>
                 <ul>
-                    <li><a href="./pages/working_on_it.html"><strong>Autonomous Drone Obstacle Avoidance (Coming Soon)</strong></a> - [<a
-                            href="./pages/working_on_it.html">source
+                    <li><a href="https://github.com/JamesMichaelBallowProjects/simple_image_labeler/blob/main/README.md" target="_blank"><strong>Simple Image Labeler</strong></a> - [<a
+                        href="https://github.com/JamesMichaelBallowProjects/simple_image_labeler" target="_blank">source code</a>] - A real tool that can be used by
+                        researchers
+                        in computer vision field to label images quickly so that they can prepare
+                        datasets for
+                        smaller computer vision projects. This is an example of working in computer vision using <strong>opencv (cv2)</strong> python package.
+                    </li>
+                    <li><a href="./pages/drone/index.html" target="_blank"><strong>Autonomous Drone Obstacle Avoidance</strong></a> - [<a
+                            href="./pages/_shared/working_on_it.html" target="_blank">source
                             code</a>] - </em> This was a project in which I participated as the lead machine learnist in terms of
                             labeling the images and training models to identify the location of cardboard boxes. This is an excellent
                             example of machine learning, using python, data labeling, and data analytics.
                     </li>
-                    <li><a href="./pages/working_on_it.html"><strong>Hand Detection and Gesture Identification (Coming Soon)</strong></a> - [<a
-                        href="./pages/working_on_it.html">source
+                    <li><a href="./pages/_shared/working_on_it.html" target="_blank"><strong>Hand Detection and Gesture Identification (Coming Soon)</strong></a> - [<a
+                        href="./pages/_shared/working_on_it.html" target="_blank">source
                         code</a>] - </em> This is just a quick page to show off results and findings from my thesis work. I cannot show
                         all content as the material is owned by Clarkson University and by my publication. However, I can show the code
                         used in my work and some results that were marginal. This is another excellent example of computer vision,
@@ -350,39 +349,39 @@
                 </ul>
                 <li><strong>Web</strong></li>
                 <ul>
-                    <li><a href="https://abacode.com/scout/"><strong>Abacode SCOUT&copy (Video)</strong></a>
+                    <li><a href="https://abacode.com/scout/" target="_blank"><strong>Abacode SCOUT&copy (Video)</strong></a>
                         - This is a cybersecurity project (product) that I have been lead in designing, developing, and implementing for Abacode cybersecurity
-                        & Compliance. <a href="https://vimeo.com/862936890">This video</a> shows the product advertisement so you can see the work.
+                        & Compliance. <a href="https://vimeo.com/862936890" target="_blank">This video</a> shows the product advertisement so you can see the work.
                     </li>
-                    <li><a href="https://jamesmichaelballowprojects.github.io/ballow_simon_says_web_game_example/"><strong>Simon
+                    <li><a href="https://jamesmichaelballowprojects.github.io/ballow_simon_says_web_game_example/" target="_blank"><strong>Simon
                                 Says Game</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/ballow_simon_says_web_game_example">source
+                            href="https://github.com/JamesMichaelBallowProjects/ballow_simon_says_web_game_example" target="_blank">source
                             code</a>] - Example of using JavaScript, images, animations, and sound to make a simple
                         game.
                         First project I ever did using JavaScript. (Sounds in web app are slow when hosting from github
                         pages, excuse that) <em>Source of learning to make this application is from
                             TheAppBrewery.com</em>
                     </li>
-                    <li><a href="https://jamesmichaelballowprojects.github.io/product_website_development_example/"><strong>Sample
+                    <li><a href="https://jamesmichaelballowprojects.github.io/product_website_development_example/" target="_blank"><strong>Sample
                                 Product Website</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/product_website_development_example">source
+                            href="https://github.com/JamesMichaelBallowProjects/product_website_development_example" target="_blank">source
                             code</a>] - Example of using a healthy amount of HTML/CSS/JS, including bootstrap, to make a
                         website for an iOS App product page. Second project I ever did using HTML/CSS. <em>Source of
                             learning to make this application is from TheAppBrewery.com</em> </li>
                     <li><a
-                            href="https://chrome.google.com/webstore/detail/blobbr/lmocmdkplilbpibpcanabhppbeobpfol?hl=en&authuser=1"><strong>Blobbr
+                            href="https://chrome.google.com/webstore/detail/blobbr/lmocmdkplilbpibpcanabhppbeobpfol?hl=en&authuser=1" target="_blank"><strong>Blobbr
                                 (Google Chrome Extension) [Live in Chrome Web Store]</strong></a> - [<a
-                            href="https://github.com/JamesMichaelBallowProjects/blobbr">source code</a>] - Example of
+                            href="https://github.com/JamesMichaelBallowProjects/blobbr" target="_blank">source code</a>] - Example of
                         using
                         a healty amount of HTML/CSS/JS and Google Chrome developer tools to generate a unique Google
                         Chrome
                         Extension and post it to the Chrome Store. <em>Source of knowledge: <a
-                                href="https://anobject.teachable.com/">© Chrome Extensions Academy 2023</a></em> </li>
+                                href="https://anobject.teachable.com/" target="_blank">© Chrome Extensions Academy 2023</a></em> </li>
                 </ul>
                 <li><strong>Courses Created</strong></li>
                 <ul>
                     <li><a
-                            href="https://www.udemy.com/course/computer-science-the-foundation-you-didnt-know-you-needed/"><strong>Computer
+                            href="https://www.udemy.com/course/computer-science-the-foundation-you-didnt-know-you-needed/" target="_blank"><strong>Computer
                                 Science: The Foundation You Didn't Know You Needed</strong></a> - Created by James M.
                         Ballow
                         - Udemy - (March 2023) </li>
@@ -400,42 +399,42 @@
         <div class="banner-holder center-items" id="cert-banner-holder">
             <div class="cert-banner" id="cert-banner-1">
                 <a href="https://www.credly.com/badges/94234c7f-5661-496b-98c3-d0fb567a2eec/public_url" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/solutions-architect.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/solutions-architect.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=mhPx.7jca.EJK3" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/python-associate.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/python-associate.png">
                 </a>
                 <a href="https://www.credly.com/badges/191a9d1e-280b-4fa3-8666-cfbd24ae09c3/public_url" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/ms-sc-900.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/ms-sc-900.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=DpTe.EVFd.4meN" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/c-entry.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/c-entry.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=yyLp.Hgk4.cPep">
-                    <img class="cert-banner-cert" src="./img/certs/cpp-entry.png" target="_blank">
+                    <img class="cert-banner-cert" src="./index/img/certs/cpp-entry.png" target="_blank">
                 </a>
                 <a href="https://verify.openedg.org/?id=cUjc.qBaz.s3nV" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/js-entry.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/js-entry.png">
                 </a>
             </div>
             <div class="cert-banner" id="cert-banner-2">
                 <a href="https://www.credly.com/badges/94234c7f-5661-496b-98c3-d0fb567a2eec/public_url" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/solutions-architect.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/solutions-architect.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=mhPx.7jca.EJK3" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/python-associate.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/python-associate.png">
                 </a>
                 <a href="https://www.credly.com/badges/191a9d1e-280b-4fa3-8666-cfbd24ae09c3/public_url" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/ms-sc-900.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/ms-sc-900.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=DpTe.EVFd.4meN" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/c-entry.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/c-entry.png">
                 </a>
                 <a href="https://verify.openedg.org/?id=yyLp.Hgk4.cPep">
-                    <img class="cert-banner-cert" src="./img/certs/cpp-entry.png" target="_blank">
+                    <img class="cert-banner-cert" src="./index/img/certs/cpp-entry.png" target="_blank">
                 </a>
                 <a href="https://verify.openedg.org/?id=cUjc.qBaz.s3nV" target="_blank">
-                    <img class="cert-banner-cert" src="./img/certs/js-entry.png">
+                    <img class="cert-banner-cert" src="./index/img/certs/js-entry.png">
                 </a>
             </div>
         </div>
@@ -476,16 +475,16 @@
 
     </section>
 
-    <div><img src="./img/displays/Fancy_separator.png" class="fancy-image"></img></div>
+    <div><img src="./index/img/displays/Fancy_separator.png" class="fancy-image" style="transform: rotate(180deg);"></img></div>
 
 
     <!-- Mine -->
-    <script type="module" src="./scripts/confetti.js" async defer></script>
-    <script src="./scripts/main.js" async defer></script>
-    <script src="./scripts/skills.js" async defer></script>
-    <script src="./scripts/hobbies.js" async defer></script>
-    <script src="./scripts/networks.js" async defer></script>
-    <script src="./scripts/banner.js" async defer></script>
+    <script type="module" src="./index/scripts/confetti.js" async defer></script>
+    <script src="./index/scripts/main.js" async defer></script>
+    <script src="./index/scripts/skills.js" async defer></script>
+    <script src="./index/scripts/hobbies.js" async defer></script>
+    <script src="./index/scripts/networks.js" async defer></script>
+    <script src="./index/scripts/banner.js" async defer></script>
 
     <!-- For Bootstrapping -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
