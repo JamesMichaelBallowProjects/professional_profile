@@ -9,8 +9,8 @@
             },
             "image": null,
             "video":{
-                "thumbnail_path": "./img/displays/violin-poster-thumbnail.jpg",
-                "video_path": "./video/ballow_violin.mp4"
+                "thumbnail_path": "./index/img/displays/violin-poster-thumbnail.jpg",
+                "video_path": "./index/video/ballow_violin.mp4"
             }
         },
         {
@@ -22,8 +22,8 @@
             },
             "image": null,
             "video":{
-                "thumbnail_path": "./img/displays/cello-poster-thumbnail.jpg",
-                "video_path": "./video/ballow_cello.mp4"
+                "thumbnail_path": "./index/img/displays/cello-poster-thumbnail.jpg",
+                "video_path": "./index/video/ballow_cello.mp4"
             }
         },
         {
@@ -34,7 +34,7 @@
                 "author": "John Lasseter"
             },
             "image": {
-                    "image_path": "img/hobbies/3d_printing.jpg"
+                    "image_path": "./index/img/hobbies/3d_printing.jpg"
             },
             "video": null
         },
@@ -46,7 +46,7 @@
                 "author": "Anonymous"
             },
             "image": {
-                "image_path": "img/hobbies/crochet.jpg"
+                "image_path": "./index/img/hobbies/crochet.jpg"
             },
             "video": null
         },
@@ -58,7 +58,7 @@
                 "author": "Julia Child"
             },
             "image": {
-                "image_path": "img/hobbies/baking.jpg"
+                "image_path": "./index/img/hobbies/baking.jpg"
             },
             "video": null
         },
@@ -70,7 +70,7 @@
                 "author": "Helen Keller"
             },
             "image": {
-                    "image_path": "img/hobbies/world_traveler.jpg"
+                    "image_path": "./index/img/hobbies/world_traveler.jpg"
             },
             "video": null
         }

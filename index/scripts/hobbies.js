@@ -105,7 +105,7 @@ function generate_hobby(
 
 // --------------------------------------
 // generate hobbies accordion
-fetch("./data/hobbies.json")
+fetch("./index/data/hobbies.json")
   .then((res) => res.json())
   .then((data) => {
     generate_carousel_indicator(data["hobbies"].length);

@@ -100,7 +100,7 @@ function populate_skills_accordion(element_id, skill_name, skill_comments) {
 
 // --------------------------------------
 // generate skills accordion
-fetch('./data/skills.json')
+fetch('./index/data/skills.json')
   .then(res => res.json()) 
   .then(data => {
     data["skills"].forEach(r => {
