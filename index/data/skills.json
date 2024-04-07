@@ -1,11 +1,11 @@
 {
   "skills": [
     {
-      "name": "AWS - Amazon Web Services",
+      "name": "Amazon Web Services",
       "table": "skills-accordion-1",
       "description": [
         {
-          "title": "AWS Solutions Architect",
+          "title": "Solutions Architect",
           "body": "I am certified as <strong>Associate Solutions Architect</strong>. I am working towards professional certification.",
           "rating": "⭐⭐⭐⭐⭐",
           "rating_number": "5"
@@ -17,31 +17,31 @@
           "rating_number": "5"
         },
         {
-          "title": "AWS Serverless Architecture",
+          "title": "Serverless Architecture",
           "body": "I am <strong>very experienced</strong> in creating lambda functions, Athena, S3, Glue, SQS, SNS, and API Gateway in Console and in CDK.",
           "rating": "⭐⭐⭐⭐⭐",
           "rating_number": "5"
         },
         {
-          "title": "AWS Cloud9 Computing",
+          "title": "Cloud9",
           "body": "I understand how to build Cloud9 environments, and use CloudFormation for a development in the cloud (i.e., repository, git, CDK).",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
         },
         {
-          "title": "AWS CKD (Python)",
+          "title": "CKD (Python)",
           "body": "I use CDK to fully develop a CloudFormation Template to CloudForm an architecture. I troubleshoot CDK and resolve build issues.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
         },
         {
-          "title": "AWS CloudFormation (IaC)",
+          "title": "CloudFormation",
           "body": "I use CloudFormation to build an architecture in AWS. I know how to CloudForm using CodePipeline or CloudFormation directly.",
           "rating": "⭐⭐⭐",
           "rating_number": "3"
         },
         {
-          "title": "AWS Grafana (AMG)",
+          "title": "AWS Grafana",
           "body": "I used Amazon-Managed Grafana to build dashboards for customers. I developed a program to generate dashboards <em>en masse</em>.",
           "rating": "⭐⭐⭐",
           "rating_number": "3"
@@ -89,8 +89,8 @@
           "rating_number": "5"
         },
         {
-          "title": "C-Shell, Bash",
-          "body": "I wrote <strong>award-winning</strong> U.S. Department of Defense, cross-laboratory job automation-husbandry software using shell.",
+          "title": "Shell",
+          "body": "I wrote <strong>award-winning</strong> U.S. Department of Defense, cross-laboratory job automation-husbandry software using shell languages.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
         },
@@ -173,7 +173,7 @@
           "rating_number": "5"
         },
         {
-          "title": "Comparing Commits",
+          "title": "Resolving Conflicts",
           "body": "When there is a commit issue, or there is a developer-caused conflict, I can <strong>spot the issues quickly</strong> and think through a resolve calmly and quickly.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "name": "Professional Development (Soft Skills)",
+      "name": "Professional Development",
       "table": "skills-accordion-2",
       "description": [
         {
@@ -235,7 +235,7 @@
           "rating_number": "5"
         },
         {
-          "title": "Communication/Collaboration",
+          "title": "Collaboration",
           "body": "I participate whole-heartedly in <strong>backlog refinement, retrospectives, and daily standups</strong> to ensure there are minimal doubts.",
           "rating": "⭐⭐⭐⭐",
           "rating_number": "4"
@@ -247,7 +247,7 @@
       "table": "skills-accordion-2",
       "description": [
         {
-          "title": "Coded Comments",
+          "title": "Comments",
           "body": "In all of my code, <strong>I write comments in a fashion so as to allow even the most novice of programmers to understand</strong> the logic and the reasoning behind each block of code.",
           "rating": "⭐⭐⭐⭐⭐",
           "rating_number": "5"
@@ -319,7 +319,7 @@
           "rating_number": "5"
         },
         {
-          "title": "Machine/Deep Learning",
+          "title": "Machine Learning",
           "body": "I learned a majority of machine learning in my Master's Degree. I used CNNs along with computer vision for hand gesture detection in thermal imaging. I have given talks/presentations and answered questions about machine learning to employees at all ranks.",
           "rating": "⭐⭐⭐",
           "rating_number": "3"

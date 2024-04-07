@@ -1,37 +1,78 @@
+/******************** VARIABLES ********************/
+:root {
+    --primary-color-1: #424769;
+    --secondary-color-1: #969bc0;
+
+    --primary-color-2: #4F6F52;
+    --secondary-color-2: #95b799;
+
+    --primary-color-3: #E7B10A;
+    --secondary-color-3: #e5dbbd;
+
+    --primary-color-4: #9A3B3B;
+    --secondary-color-4: #da9f9f;
+
+    --default-color-1: #d5d5d5;
+    --default-color-2: #5a5a5a;
+  }
+
+
+#test1 {
+    background-color: var(--primary-color-1);
+    color: var(--secondary-color-1);
+}
+#test2 {
+    background-color: var(--primary-color-2);
+    color: var(--secondary-color-2);
+}
+#test3 {
+    background-color: var(--primary-color-3);
+    color: var(--secondary-color-3);
+}
+#test4 {
+    background-color: var(--primary-color-4);
+    color: var(--secondary-color-4);
+}
+
 /*********************TAG SELECTORS*****************/
 body {
-    background-color: #d8d8d8;
+    background-color: var(--default-color-1);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 hr {
-    background-color: #f8c3c3 !important;
+    background-color: var(--primary-color-4) !important;
     border-style: solid !important;
     border: 1px solid black;
     height: 4px !important;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
 h1 {
     border: 1px;
-    color: #f8c3c3;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: var(--primary-color-3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+    text-align: center;
 }
 
 h2 {
     border: 1px;
-    color: #f8c3c3;
+    color: var(--primary-color-4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h3 {
     font-size: 2.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     border: 1px;
-    color: #fddb75;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: var(--primary-color-2);
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
 }
 
 a{
@@ -39,11 +80,11 @@ a{
 }
 
 a:link{
-    color: #0174BE
+    color: var(--primary-color-1)
 }
 
 a:visited{
-    color: #124076
+    color: var(--secondary-color-1)
 }
 
 a:focus {
@@ -84,7 +125,7 @@ a:focus {
 }
 
 .my-separator {
-    background-color: #d8c0c0;
+    background-color: var(--primary-color-1);
     border-style: solid;
     height: 2px;
 }
@@ -93,9 +134,8 @@ a:focus {
 #myName {
     font-size: 3rem;
     border: 1px;
-    color: #f8c3c3;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 #myName.mobile {
@@ -106,6 +146,7 @@ a:focus {
     /* size */
     height: 100%;
     width: 100%;
+    text-align: center;
 
     /* position */
     object-fit: contain;
@@ -118,6 +159,12 @@ a:focus {
     /* expression */
     transition: transform .4s;
     transform: scale(0.9);
+}
+
+#intro-separator {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 
