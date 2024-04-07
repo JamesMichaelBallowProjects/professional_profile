@@ -25,12 +25,12 @@
     box-shadow: 0px 10px 10px #888888;
     padding: 0;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: auto;
     height: auto;
     max-height: 400px;
     object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hobby-video {
@@ -38,6 +38,7 @@
     border: 2px solid black;
     box-shadow: 0px 10px 10px #888888;
     padding: 0;
+    display: block;
     width: auto;
     height: auto;
     max-height: 400px;

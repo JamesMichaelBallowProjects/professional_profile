@@ -10,7 +10,7 @@
             "image": null,
             "video":{
                 "thumbnail_path": "./index/img/displays/violin-poster-thumbnail.jpg",
-                "video_path": "./index/video/ballow_violin.mp4"
+                "video_path": "./index/video/ballow_violin_cropped.mp4"
             }
         },
         {
@@ -23,7 +23,7 @@
             "image": null,
             "video":{
                 "thumbnail_path": "./index/img/displays/cello-poster-thumbnail.jpg",
-                "video_path": "./index/video/ballow_cello.mp4"
+                "video_path": "./index/video/ballow_cello_cropped.mp4"
             }
         },
         {
