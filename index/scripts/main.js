@@ -3,13 +3,32 @@ function isMobileDevice() {
 		.matchMedia("only screen and (max-width: 760px)").matches;
 }
 let isMobile = isMobileDevice()
-// THIS IS HOW TO FIX FOR iPHONE
-// https://phppot.com/javascript/detect-mobile-device-javascript/
+
+function getDeviceName() {
+  const userAgent = navigator.userAgent;
+  const deviceNameRegex = /\(([^)]+)\)/; // Regex to extract the device name within parentheses
+
+  const matches = userAgent.match(deviceNameRegex);
+  if (matches && matches.length > 1) {
+    return matches[1];
+  }
+
+  return "Unknown"; // Return "Unknown" if the device name cannot be extracted
+}
+let deviceName = getDeviceName()
+
 
 
 // popover for "about me"
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
+
+// overall DOM
+// --- fix font size for mobile device
+if (isMobile) {
+  document.getElementById('dom-body').classList.add('mobile')
+  document.getElementById('myName').classList.add('mobile')
+}
 
 // education and publications
 // -- confetti.js contains logic to add confetti animations to logos

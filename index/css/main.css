@@ -52,6 +52,24 @@ a:focus {
 }
 
 
+
+#dom-body.mobile {
+    font-size: 0.8em;
+}
+
+#dom-body.mobile h3 {
+    font-size: 1.8em;
+}
+
+#dom-body.mobile #hobbySection h5 {
+    font-size: 1.2em;
+}
+
+#dom-body.mobile #hobbySection p {
+    font-size: 0.6em;
+}
+
+
 /* ------------ Entire Page ---------------*/
 .center-items {
     margin: auto;
@@ -73,11 +91,15 @@ a:focus {
 
 /* ------------ Introductory Section ---------------*/
 #myName {
-    font-size: 3vw;
+    font-size: 3rem;
     border: 1px;
     color: #f8c3c3;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#myName.mobile {
+    font-size: 1.5rem;
 }
 
 #myImage {
