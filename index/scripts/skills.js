@@ -6,7 +6,6 @@ var accordionItemCounter = {
 
 // toggle skills displays
 function toggle_skills_display(){
-  console.log("button clicked")
   document.getElementById("simplified-skillset").classList.toggle("hide-content");
   document.getElementById("accordion-skillset").classList.toggle("hide-content");
 }
@@ -14,9 +13,9 @@ function toggle_skills_display(){
 // simplified display
 function generate_badge(id_to_put_card, card_title, rating_number) {
   var newBadge = `
-    <h2 class="badge bg-primary rounded-pill position-relative">
+    <h2 class="badge custom-badge rounded-pill position-relative">
       ${card_title}
-      <span class="badge text-bg-danger">
+      <span class="badge custom-badge custom-badge-rating">
         ${rating_number}⭐
       </span>
     </h2>

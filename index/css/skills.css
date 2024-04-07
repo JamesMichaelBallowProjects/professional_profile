@@ -6,15 +6,51 @@
     display: none;
 }
 
-#accordion-badges-switch{
-    width: max-content;
-    background-color: #C7C8CC;
+.custom-badge {
+    background-color: var(--primary-color-1);
+    font-weight: normal;
+    text-shadow: none;
+    font-size: 0.9em;
     border: 1px solid black;
-    border-radius: 10px;
+    color: var(--default-color-1);
 }
 
-#skill-list-holder{
-    background-color: #8c6a5d4d;
+.custom-badge-rating {
+    background-color: var(--secondary-color-4);
+    color: black;
+    font-weight: bold;
+}
+
+#accordion-badges-switch {
+    width: max-content;
+    background-color: var(--primary-color-1);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: var(--default-color-1);
+}
+
+#skill-list-holder {
+    background-color: var(--secondary-color-1);
     border: 2px solid black;
     border-radius: 20px;
+}
+
+#simplified-skillset.mobile .custom-badge {
+    font-size: 0.8em;
+}
+
+#accordion-skillset.mobile .accordion-button {
+    font-size: 0.5em;
+}
+
+#accordion-skillset.mobile .card-header {
+    font-size: 0.8em;
+}
+
+#accordion-skillset.mobile .card-body {
+    padding-top: 0;
+}
+
+#accordion-skillset.mobile .card-text.skill-card {
+    font-size: 0.7em;
 }

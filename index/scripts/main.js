@@ -28,6 +28,8 @@ const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
 if (isMobile) {
   document.getElementById('dom-body').classList.add('mobile')
   document.getElementById('myName').classList.add('mobile')
+  document.getElementById('simplified-skillset').classList.add('mobile')
+  document.getElementById('accordion-skillset').classList.add('mobile')
 }
 
 // education and publications
