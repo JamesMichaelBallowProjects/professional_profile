@@ -41,7 +41,14 @@ if (isMobile) {
   }
 }
 
-
+// initialize
+const mobileNotificationToast = document.getElementById("mobile-notification-toast")
+window.addEventListener('load', () => {
+  var bsMobileNotificationToast = new bootstrap.Toast(mobileNotificationToast);
+  if (isMobile) {
+    bsMobileNotificationToast.show();
+  }
+})
 
 
 // personal projects
