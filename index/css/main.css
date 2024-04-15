@@ -167,6 +167,19 @@ a:focus {
     margin-right: 0%;
 }
 
+/* ------------ Project Section ------------ */
+.project-badge {
+    background-color: var(--primary-color-1);
+    font-weight: normal;
+    text-shadow: none;
+    font-size: 0.7em;
+    border: 1px solid black;
+    color: var(--default-color-1);
+}
+
+.project-text {
+    font-size: 0.8em;
+}
 
 /* ------------ Education and Plublications Section ---------------*/
 .education-logo {
