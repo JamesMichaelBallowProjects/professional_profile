@@ -184,8 +184,7 @@ a:focus {
 /* ------------ Education and Plublications Section ---------------*/
 .education-logo {
     cursor: pointer;
-    height: 100px;
-
+    height: 125px;
 }
 
 .education-logo-holder {
@@ -198,6 +197,8 @@ a:focus {
     border: 1px solid var(--default-color-2);
     border-radius: 15px;
     box-shadow: 5px 5px 20px 4px var(--default-color-2);
+    height: 120px;
+    width: auto;
 }
 
 
