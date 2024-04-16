@@ -30,6 +30,8 @@ if (isMobile) {
   document.getElementById('myName').classList.add('mobile')
   document.getElementById('simplified-skillset').classList.add('mobile')
   document.getElementById('accordion-skillset').classList.add('mobile')
+  document.getElementById('udemy-course-preview').classList.add('mobile')
+  
 }
 
 // education and publications
@@ -63,13 +65,13 @@ if (isMobile) {
 }
 
 // initialize
-const mobileNotificationToast = document.getElementById("mobile-notification-toast")
-window.addEventListener('load', () => {
-  var bsMobileNotificationToast = new bootstrap.Toast(mobileNotificationToast);
-  if (isMobile) {
-    bsMobileNotificationToast.show();
-  }
-})
+// const mobileNotificationToast = document.getElementById("mobile-notification-toast")
+// window.addEventListener('load', () => {
+//   var bsMobileNotificationToast = new bootstrap.Toast(mobileNotificationToast);
+//   if (isMobile) {
+//     bsMobileNotificationToast.show();
+//   }
+// })
 
 
 // personal projects
