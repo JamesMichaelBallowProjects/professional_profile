@@ -38,7 +38,7 @@ function populate_skills_badges(element_id, skill_comments) {
 function generate_card(id_to_put_card, card_title, card_rating, card_body) {
   var newCard = `
       <div class="col col-sm-6 g-4">
-        <div class="card text-bg-light border-dark flex-fill" style="width: auto;">
+        <div class="card text-bg-light border-dark h-100" style="width: auto;">
           <div class="card-header"><strong>${card_title}</strong></div>
           <div class="card-body ">
             <h5 class="card-title">

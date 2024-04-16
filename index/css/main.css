@@ -80,11 +80,11 @@ a{
 }
 
 a:link{
-    color: var(--primary-color-1)
+    color: var(--primary-color-2)
 }
 
 a:visited{
-    color: var(--secondary-color-1)
+    color: var(--secondary-color-2)
 }
 
 a:focus {
@@ -167,13 +167,39 @@ a:focus {
     margin-right: 0%;
 }
 
+/* ------------ Project Section ------------ */
+.project-badge {
+    background-color: var(--primary-color-1);
+    font-weight: normal;
+    text-shadow: none;
+    font-size: 0.7em;
+    border: 1px solid black;
+    color: var(--default-color-1);
+}
+
+.project-text {
+    font-size: 0.8em;
+}
 
 /* ------------ Education and Plublications Section ---------------*/
 .education-logo {
     cursor: pointer;
-    height: 100px
+    height: 125px;
 }
 
+.education-logo-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#udemy-course-preview {
+    border: 1px solid var(--default-color-2);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 4px var(--default-color-2);
+    height: 120px;
+    width: auto;
+}
 
 
 /* ----------- HIGHCHARTS ---------- */
@@ -229,7 +255,7 @@ a:focus {
 .banner-holder[animated=true] .cert-banner{
     width: fit-content;
     flex-wrap: nowrap;
-    animation: bannermove 15s linear infinite;
+    animation: bannermove 20s linear infinite;
 }
 
 .banner-holder[animated=true]:hover .cert-banner{
@@ -238,7 +264,7 @@ a:focus {
 
 
 .cert-banner-cert {
-    height: 20vh;
+    height: 25vh;
     width: auto;
 }
 
