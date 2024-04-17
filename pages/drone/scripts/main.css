@@ -97,17 +97,17 @@ figcaption {
 
 
 /* --- training image preparation */
-.rgb-cluster {
+#rgb-cluster {
     max-width: 90%;
     height: auto;
     transition: filter 0.5s;
 }
 
-.rgb-cluster.gray-scale  {
+#rgb-cluster.gray-scale  {
     filter: grayscale(100%)
 }
 
-.rgb-cluster img {
+#rgb-cluster img {
     display: block;
     max-width: 100%;
     height: auto;

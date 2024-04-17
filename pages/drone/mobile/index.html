@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Machine learning project done by James M. Ballow and colleagues at Clarkson University in 2022.">
+
+    <title>Drone Obstacle Avoidance Project</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="data:image/x-icon;,&#9733;"> -->
+
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- For Bootstrapping -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- My styling -->
+    <!-- <link rel="icon" href="img/apple-touch-icon.png"> -->
+    <link rel="stylesheet" href="../../../index/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body id="mobile-body">
+    <!-- Background -->
+    <!-- Background -->
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100" id="page-background">
+        <path fill="#F2EFE5" class="out-top"
+            d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+        <path fill="#E3E1D9" class="in-top"
+            d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+        <path fill="#C7C8CC" class="out-bottom"
+            d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+        <path fill="#B4B4B8" class="in-bottom"
+            d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+    </svg>
+    <!-- Background -->
+    <!-- Background -->
+
+    <!-- <div class="center-items"> -->
+
+    <!-- Title of Page -->
+    <div id="title-section-mobile" class="container-fluid">
+        <h1>Drone Object Avoidance</h1>
+        <p>
+            This is a short summary of the work performed by James M. Ballow and some colleagues at Clarkson
+            University (Potsdam) for an advanced machine learning course tought by professor Soumyabrata Dey
+            in 2022. This page serves to give an over-simplified presentation of the work conducted during
+            this course to exemplify the knowledge acquired from the course.
+        </p>
+    </div>
+
+    <!-- Project Goal -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col flex-dead-center">
+                <img src="../img/gifs/drone_flying.gif" style="width: 200px;" alt="">
+            </div>
+            <div class="col">
+                <div>
+                    <h3>Project Goal</h3>
+                    <p>
+                        Use machine learning in conjunction with computer vision to yield an algorithm that can
+                        detect an object and identify the
+                        object during flight so as to avoid collision with the object.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planning -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div>
+                    <h3>Planning</h3>
+                    <p>
+                        These are some data collection methods employed in the project. The idea is to collect
+                        images of the
+                        object that is to be avoided (cardboard box) and to do so in a manner that gives a different
+                        vantage
+                        point of the object relative to the frame border. The idea was also to ensure that a
+                        consistent and
+                        generous amount of the object was observed so as to not impose a sub-categorical bias (i.e.,
+                        favor of
+                        one vantage of a kind of object instead of all vantages).
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row row-cols-2">
+                    <div class="col flex-dead-center">
+                        <figure>
+                            <img class="image-border" src="../img/stills/data-collection-schematic-1.png" height="100px"
+                                alt="">
+                            <figcaption>
+                                <strong>Gridded Floor Layout</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col flex-dead-center">
+                        <figure>
+                            <img class="image-border" src="../img/stills/data-collection-schematic-3.png" height="100px"
+                                alt="">
+                            <figcaption>
+                                <strong>Gridded Airspace Layout</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Collection -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div>
+                    <h3>Data Collection</h3>
+                    <p>
+                        Using the drone itself, images were taken by placing the drone on each of the gridded
+                        intersections
+                        starting the drone and allowing it to naturally drift up off of the ground. Using remote
+                        control,
+                        the drone was raised higher to achieve the correct arial height. This was repeated at each
+                        gridded
+                        intersection to collect samples from all planned vantages. Here are some samples of the data
+                        collected
+                        at a few of the intersections.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="data-collection-gifs">
+                    <div class="row row-cols-6 flex-dead-center">
+                        <div class="col col-1 flex-dead-center">
+                            <span style="font-size: 1.5em;">L6</span>
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L6-R1.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L6-R2.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L6-R3.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L6-R4.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L6-R5.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="row row-cols-6 pad-top-bottom flex-dead-center">
+                        <div class="col col-1 flex-dead-center">
+                            <span style="font-size: 1.5em;">L4</span>
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L4-R1.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L4-R2.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L4-R3.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L4-R4.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L4-R5.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="row row-cols-6 flex-dead-center">
+                        <div class="col col-1 flex-dead-center">
+                            <span style="font-size: 1.5em;">L2</span>
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L2-R1.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L2-R2.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L2-R3.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L2-R4.gif" alt="">
+                        </div>
+                        <div class="col" style="padding-left: 4px; padding-right: 4px;">
+                            <img class="image-border" src="../img/gifs/L2-R5.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Training Image Preparation -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div>
+                    <h3>Training Image Preparation</h3>
+                    <p>
+                        The objective was to identify a particular object (i.e., a box) within an image. Obviously,
+                        there will
+                        be more than just a box in an image, so to train a machine we prepared two pools of images:
+                        (1) those
+                        that contain the box of interest, and (2) those than contain anything that is not a box
+                        (shapes and textures
+                        throughout the room). We used <code>python</code>, and manual image segmentation and
+                        labeling to obtain
+                        the images containing the boxes, and we used random box generation generation to obtain
+                        differently-sized
+                        background images throughout the room.
+                    </p>
+                    <p>
+                        We greyscaled the images to shrink the feature space because it was impractical in a
+                        semester to
+                        obtain enough samples to include a 16-bit color space in combination with extensive
+                        textures. Then
+                        images were resized to 100x100 pixels so as to allow for use of a fixed-size CNN.
+                    </p>
+                </div>
+            </div>
+            <div class="col flex-dead-center">
+                <figure class="rgb-cluster">
+                    <img class="peek-a-boo-img" src="../img/stills/background-images-rgb.PNG" width="300px" alt="">
+                    <figcaption>
+                        <strong>Background (Non-object) Images</strong>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <p>
+                    Finally, to reduce our bias, we increased the number of textures and orientations using
+                    additional augmentation
+                    including translation, rotation, and flipping to fill out the feature space with non-object
+                    (background) samples.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Results -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div>
+                    <h3>Results</h3>
+                    <p>
+                        After training with thousands of images taken from different rooms and different vantage
+                        points, the drone
+                        was flown on its own to gather images which reported back to a remote location running
+                        software to receive
+                        the images. Due to processing time, the images were read at a frequency of 1 image per 5
+                        images reported.
+                        Using randomized bounding boxes and the trained machine learning model, sub-images of the
+                        object of interest
+                        were identified and printed to screen for us to observe what the drone understands as being
+                        the location of
+                        the object of interest. The project, peformed in a matter of weeks, was a success in that the
+                        drone was able
+                        to clearly "see" the object of interest at many vantages points.
+                    </p>
+                </div>
+            </div>
+            <div class="col" style="width: 100%;">
+                <div>
+                    <div class="row pad-top-bottom flex-dead-center">
+                        <div class="col flex-right">
+                            <img class="image-border" src="../img/gifs/Demo-1.gif" alt="">
+                        </div>
+                        <div class="col flex-left">
+                            <img class="image-border" src="../img/gifs/Demo-2.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="row pad-top-bottom">
+                        <div class="col flex-right">
+                            <img class="image-border" src="../img/gifs/Demo-3.gif" alt="">
+                        </div>
+                        <div class="col flex-left">
+                            <img class="image-border" src="../img/gifs/Demo-4.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="container-fluid project-section">
+        <div class="row">
+            <div class="col col-4 flex-dead-center">
+
+            </div>
+            <div class="col col-8 flex-left">
+                <div style="width: 70%;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Last Paragraph -->
+    <div class="container-fluid project-section">
+        <div class="row row-cols-1">
+            <div class="col flex-dead-center">
+                <div>
+                    <h3>Future Work</h3>
+                    <ol>
+                        <li>
+                            A different machine learning model can be created for each kind of environment that the
+                            drone would
+                            travel (e.g., in a forest, in a home, in an office, in the dark, in a mountain region)
+                            and the algorithm
+                            could change between these model sets to provide an accurate model to discern the object
+                            of interest.
+                        </li>
+                        <li>
+                            It would be interesting to incorporate a depth detection device to allow for another
+                            feature in the
+                            feature space. Understanding the depth of the object you have bounded will inform the
+                            algorithm about
+                            how close the drone can move towards that object. This is to say that the assumption of
+                            a fixed-size
+                            object can be eliminated, because depth and xy-bounding box yield true spacial
+                            orientation.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col flex-top">
+                <div>
+                    <h3>References</h3>
+                    <ol>
+                        <li>
+                            R. Girshick, J. Donahue, T. Darrell and J. Malik, "<a
+                                ref="https://ieeexplore.ieee.org/document/7112511" target="_blank">Region-Based
+                                Convolutional Networks
+                                for Accurate
+                                Object Detection and Segmentation</a>," in IEEE Transactions on Pattern Analysis and
+                            Machine
+                            Intelligence,
+                            vol. 38, no. 1, pp. 142-158, 1 Jan. 2016, doi: 10.1109/TPAMI.2015.2437384.
+                        </li>
+                        <li>
+                            K. E. A. van de Sande, J. R. R. Uijlings, T. Gevers and A. W. M. Smeulders,
+                            "<a ref="https://ieeexplore.ieee.org/document/6126456" target="_blank">Segmentation as
+                                selective
+                                search for object recognition</a>," 2011 International Conference on Computer Vision,
+                            Barcelona, Spain,
+                            2011, pp. 1879-1886, doi: 10.1109/ICCV.2011.6126456.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+    <!-- Mine -->
+    <script src="../scripts/main.js" async defer></script>
+
+    <!-- For Bootstrapping -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
